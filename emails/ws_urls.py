@@ -1,5 +1,5 @@
 from django.urls import path
-from emails import costumer, views
+from emails import consumer, views
 
 ws_urls = [
     path("ws/emails/", costumer.EmailConsumer.as_asgi()),

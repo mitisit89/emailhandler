@@ -1,15 +1,9 @@
 import json
 
-from asgiref.sync import sync_to_async
 from channels.generic.websocket import WebsocketConsumer
-import threading
-from emails.models import EmailAccount, EmailMessage
-from channels.db import database_sync_to_async
 
-import json
-from channels.generic.websocket import WebsocketConsumer
-from .models import EmailAccount, EmailMessage
-from .utils import import_emails
+from emails.models import EmailAccount, EmailMessage
+from emails.utils import import_emails
 
 
 class EmailConsumer(WebsocketConsumer):

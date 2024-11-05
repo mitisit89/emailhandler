@@ -12,5 +12,5 @@ python manage.py migrate
 daphne -b 0.0.0.0 -p 8001 emails.asgi:application
 ```
 
-## Atention
+## Attention
 You need create app password for each email account

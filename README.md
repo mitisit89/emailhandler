@@ -1,7 +1,9 @@
 
 # how to run
-install redis
 
+```bash
+sudo apt install redis
+```
 ```python
 python -m venv .venv
 source .venv/bin/activate
